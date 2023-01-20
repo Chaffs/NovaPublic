@@ -1,0 +1,19 @@
+return {
+	Damage = 11, 
+	Description = "Remember to put a description here BEFORE the game is published -Me", 
+	MaxAmmo = 30, 
+	CurrentAmmo = 30, 
+	StoredAmmo = 600, 
+	FireRate = 0.1, 
+	AutoFire = true, 
+	Range = 800, 
+	Spread = 14, 
+	ReloadTime = 2, 
+	Bullets = 1, 
+	ReloadAnim = "ReloadMagazine", 
+	ShootAnim = "ShootBullet", 
+	HoldAnim = "Hold", 
+	FireSoundId = "http://www.roblox.com/asset/?id=2934888736", 
+	SecondarySoundId = nil, 
+	ReloadSoundId = "http://www.roblox.com/asset/?id=2934887229"
+}
