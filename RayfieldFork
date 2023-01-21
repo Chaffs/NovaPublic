@@ -1676,7 +1676,6 @@ function RayfieldLibrary:CreateWindow(Settings)
 			
 			function InputValue:Set(NewInputSettings)
 				Input.InputFrame.InputBox.Text = tostring(NewInputSettings)
-				InputSettings.Callback(Input.InputFrame.InputBox.Text)
 			end
 			
 			return InputValue
