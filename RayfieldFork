@@ -1678,6 +1678,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 				Input.InputFrame.InputBox.Text = NewInputSettings.Text
 				InputSettings.Callback(Input.InputFrame.InputBox.Text)
 			end
+			
+			return InputValue
 		end
 
 		-- Dropdown
