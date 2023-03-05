@@ -1799,7 +1799,9 @@ function RayfieldLibrary:CreateWindow(Settings)
 				DropdownOption.BackgroundTransparency = 1
 				DropdownOption.UIStroke.Transparency = 1
 				DropdownOption.Title.TextTransparency = 1
-
+				
+				Dropdown.List.CanvasSize = UDim2.new(0, 0, 0, Dropdown.List.UIListLayout.AbsoluteContentSize.Y)
+				
 				DropdownOption.Interact.ZIndex = 50
 				DropdownOption.Interact.MouseButton1Click:Connect(function()
 					if Dropdown.Selected.Text ~= Option then
@@ -1883,6 +1885,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 					RayfieldLibrary.Flags[DropdownSettings.Flag] = DropdownSettings
 				end
 			end
+			
+			Dropdown.List.CanvasSize = UDim2.new(0, 0, 0, Dropdown.List.UIListLayout.AbsoluteContentSize.Y)
 
 			return DropdownSettings
 		end
