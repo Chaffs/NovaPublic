@@ -897,7 +897,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	LoadingFrame.Subtitle.TextScaled = false
 	
 	if (oldBounds.Y ~= LoadingFrame.Subtitle.TextBounds.Y) then
-		LoadingFrame.Subtitle.Size = UDim3.new(0, 440, 0, 25)
+		LoadingFrame.Subtitle.Size = UDim2.new(0, 440, 0, 25)
 		LoadingFrame.Subtitle.TextScaled = true
 	end
 	
