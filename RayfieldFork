@@ -892,14 +892,10 @@ function RayfieldLibrary:CreateWindow(Settings)
 	LoadingFrame.Visible = true
 	
 	--// Patch to fix subtitle text becoming unreadably small
-	local oldBounds = LoadingFrame.Subtitle.TextBounds
 	
 	LoadingFrame.Subtitle.TextScaled = false
-	
-	if (oldBounds.Y ~= LoadingFrame.Subtitle.TextBounds.Y) then
-		LoadingFrame.Subtitle.Size = UDim2.new(0, 440, 0, 25)
-		LoadingFrame.Subtitle.TextScaled = true
-	end
+	LoadingFrame.Subtitle.Size = UDim2.new(0, 410, 0, 30)
+	LoadingFrame.Subtitle.TextSize = 13
 	
 	pcall(function()
 		if not Settings.ConfigurationSaving.FileName then
