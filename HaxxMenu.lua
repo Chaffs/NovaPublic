@@ -60,7 +60,6 @@ ModMenu.CreateMenu = function(Settings)
 	if game:GetService'CoreGui':FindFirstChild'ModMenu' then
 		print'ModMenu Lib: Menu already exists | Destroying'
 		game:GetService'CoreGui':FindFirstChild'ModMenu':Destroy()
-		return
 	end
 	local Menu = Instance.new'ScreenGui'
 	Menu.Name = 'ModMenu'
